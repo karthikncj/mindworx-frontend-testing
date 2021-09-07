@@ -1,0 +1,937 @@
+// @import 'variables.scss';
+// .recommended_appointments {
+//     .p-card {
+//         .p-card-header {
+//             background: $lightgrey;
+//             padding: 10px;
+//             font-size: 16px;
+//             font-weight: 600;
+//         }
+//         .p-card-body {
+//             padding: 0px 10px;
+//             .p-card-content {
+//                 padding: 0px;
+//                 .content_body {
+//                     display: block;
+//                     width: 100%;
+//                     div.title {
+//                         width: 70%;
+//                         display: inline-block;
+//                         padding: 10px 0px;
+//                         color: $darkgray;
+//                         .time {
+//                             display: block;
+//                             color: $danger-text;
+//                             font-size: 10px;
+//                         }
+//                         .time_warning {
+//                             display: block;
+//                             color: $warning-text;
+//                             font-size: 10px;
+//                         }
+//                     }
+//                     .divider {
+//                         width: 100%;
+//                         display: block;
+//                         border-top: 1px solid $lightgray;
+//                     }
+//                     div.action {
+//                         text-align: right;
+//                         width: 30%;
+//                         display: inline-grid;
+//                         padding: 10px 0px;
+//                         .p_btn {
+//                             padding: 2px 10px;
+//                             font-size: 12px;
+//                             border-radius: 10px;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//         .p-card-footer {
+//             border-top: 1px solid $lightgray;
+//             text-align: center;
+//             padding: 10px;
+//             .p-button-secondary {
+//                 padding: 2px 15px;
+//                 font-size: 12px;
+//                 border-radius: 10px;
+//                 background: $darkgray;
+//                 border: 1px solid $darkgray;
+//             }
+//         }
+//     }
+// }
+// .slider_content {
+//     h1 {
+//         font-size: 20px;
+//         margin-top: 30px;
+//         margin-bottom: 10px;
+//         color: $darkgray;
+//     }
+//     .p-carousel {
+//         .p-carousel-indicators {
+//             display: none;
+//         }
+//         .p-carousel-content {
+//             .p-carousel-container {
+//                 position: relative;
+//                 .p-carousel-prev,
+//                 .p-carousel-next {
+//                     position: absolute;
+//                     z-index: 1;
+//                     background: $lightgray_opt;
+//                     border-radius: 0px;
+//                     margin: 0;
+//                     height: 95%;
+//                     padding: 30px;
+//                     span {
+//                         font-size: 35px;
+//                         color: $darkgray;
+//                     }
+//                 }
+//                 .p-carousel-next {
+//                     right: 0;
+//                 }
+//                 .p-carousel-items-content {
+//                     width: 100%;
+//                     .p-carousel-items-container {
+//                         .p-carousel-item {
+//                             .product-item {
+//                                 .product-item-content {
+//                                     position: relative;
+//                                     top: 7px;
+//                                     .p-mb-3 {
+//                                         margin: 0px 20px;
+//                                         .icon_category {
+//                                             top: 0;
+//                                             position: absolute;
+//                                             margin: 10px 50px;
+//                                             width: 100%;
+//                                             z-index: 1;
+//                                             i {
+//                                                 color: $danger-text;
+//                                             }
+//                                         }
+//                                         img {
+//                                             width: 100%;
+//                                         }
+//                                     }
+//                                     .title_carsoul {
+//                                         display: block;
+//                                         margin: 0px 20px;
+//                                         padding: 5px 10px;
+//                                         position: absolute;
+//                                         bottom: 0;
+//                                         background: rgba(0, 0, 0, 0.5);
+//                                         width: 87%;
+//                                         h4 {
+//                                             color: $white;
+//                                         }
+//                                         h6 {
+//                                             color: $white;
+//                                         }
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+// .header_activity {
+//     margin: 20px 0px;
+//     display: flex;
+//     .title_header {
+//         width: 90%;
+//         display: block;
+//         font-size: 20px;
+//         color: $darkgray;
+//     }
+//     .action_header {
+//         width: 10%;
+//         display: block;
+//         span {
+//             i {
+//                 font-size: 20px;
+//                 margin: 0px 10px;
+//                 color: $darkgray;
+//                 top: 2px;
+//                 position: relative;
+//             }
+//         }
+//         .p-button-secondary {
+//             padding: 2px 15px;
+//             font-size: 12px;
+//             border-radius: 10px;
+//             background: $darkgray;
+//             border: 1px solid $darkgray;
+//         }
+//     }
+// }
+// .activities_dashboard {
+//     .p-paginator {
+//         background: transparent;
+//         border: 1px solid transparent;
+//         border-bottom: 1px solid #C5C5C7;
+//         display: block;
+//         align-items: flex-end;
+//         justify-content: flex-end;
+//         text-align: end;
+//         .p-paginator-pages {
+//             .p-paginator-page.p-highlight {
+//                 background: $darkgray;
+//                 border-color: $darkgray;
+//             }
+//         }
+//     }
+//     .p-datatable {
+//         .p-datatable-table {
+//             .p-datatable-thead {
+//                 tr {
+//                     th {
+//                         background: $lightgrey;
+//                         border: 1px solid $lightgrey;
+//                         border-bottom: 1px solid $lightgray;
+//                         padding: 15px;
+//                         color: #000;
+//                     }
+//                 }
+//             }
+//             .p-datatable-tbody {
+//                 tr {
+//                     td {
+//                         background: #ffffff;
+//                         border: 1px solid #ffffff;
+//                         border-bottom: 1px solid #C5C5C7;
+//                         font-size: 14px;
+//                         padding: 10px;
+//                         span.time {
+//                             text-align: center;
+//                             font-size: 14px;
+//                             color: $warning-text;
+//                         }
+//                         .ecl_span {
+//                             float: right;
+//                         }
+//                         .p-button-warning {
+//                             padding: 2px 15px;
+//                             font-size: 12px;
+//                             border-radius: 10px;
+//                         }
+//                         .activity_icon {
+//                             background-color: $lightgrey;
+//                             width: 50px;
+//                             height: 50px;
+//                             border-radius: 50%;
+//                             font-size: 22px;
+//                             color: #636468 !important;
+//                             margin: 10px !important;
+//                             padding: 6px;
+//                         }
+//                     }
+//                     td:nth-child(6) {
+//                         display: flex;
+//                         span.time {
+//                             display: block;
+//                             text-align: center;
+//                             font-size: 16px;
+//                             color: $warning-text;
+//                             width: 100%;
+//                             span {
+//                                 display: block;
+//                                 font-size: 12px;
+//                             }
+//                         }
+//                         .ecl_span {
+//                             display: block;
+//                             float: right;
+//                             top: 10px;
+//                             position: relative;
+//                             .p-splitbutton {
+//                                 .p-menu {
+//                                     left: -140px !important;
+//                                 }
+//                                 .p-splitbutton-defaultbutton {
+//                                     display: none;
+//                                 }
+//                                 .p-splitbutton-menubutton {
+//                                     padding: 0px;
+//                                     background: transparent;
+//                                     border: 1px solid transparent;
+//                                     span {
+//                                         color: $darkgray;
+//                                     }
+//                                     span.pi-chevron-down::before {
+//                                         content: "\e950";
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+// .col-3 {
+//     width: 100%;
+//     padding: 0;
+//     max-width: 424px;
+//     margin-right: 30px;
+// }
+// .col-3:nth-child(3) {
+//     margin-right: 0px;
+// }
+// .slider_content {
+//     h1 {
+//         padding: 5px 20px;
+//     }
+//     .card-content {
+//         text-align: center;
+//         max-width: 300px;
+//         margin: 0 auto;
+//         .btn-primary {
+//             font-size: 14px;
+//             margin: auto;
+//             border-radius: 35px;
+//             padding: 5px 15px;
+//             background-color: #FED268;
+//             border-color: #FED268;
+//             top: -18px;
+//             position: relative;
+//         }
+//         .card-block {
+//             padding: 5px;
+//             .card-title {
+//                 color: $darkgray;
+//             }
+//             .card-text {
+//                 color: $lightgray;
+//             }
+//         }
+//     }
+// }
+// .dashboard_dialog {
+//     .p-dialog-mask {
+//         .p-dialog {
+//             height: 870vw !important;
+//             .p-dialog-header {
+//                 border-bottom: 1px solid $lightgray;
+//                 background: $white;
+//                 color: $darkgray;
+//                 .p-dialog-title {
+//                     font-size: 20px;
+//                 }
+//             }
+//             .p-dialog-content {
+//                 .fc-header-toolbar {
+//                     .fc-toolbar-chunk {
+//                         div {
+//                             display: flex;
+//                             .fc-prev-button {
+//                                 border-end-start-radius: 10px;
+//                                 border-top-left-radius: 10px;
+//                                 background: $lightgray;
+//                                 border: 1px solid $lightgray;
+//                                 border-right: 1px solid $darkgray;
+//                                 position: relative;
+//                                 span {
+//                                     color: $darkgray;
+//                                 }
+//                             }
+//                             .fc-next-button {
+//                                 border-bottom-right-radius: 10px;
+//                                 border-top-right-radius: 10px;
+//                                 background: $lightgray;
+//                                 border: 1px solid $lightgray;
+//                                 border-left: 1px solid $darkgray;
+//                                 left: -1px;
+//                                 position: relative;
+//                                 span {
+//                                     color: $darkgray;
+//                                 }
+//                             }
+//                             .fc-toolbar-title {
+//                                 font-size: 20px;
+//                                 background: #C5C5C7;
+//                                 position: relative;
+//                                 padding: 5px 20px;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//             .p-dialog-footer {
+//                 text-align: center;
+//                 border-top: 1px solid transparent;
+//                 padding: 25px;
+//                 padding-top: 10px;
+//                 .appointment_btn {
+//                     border: 1px solid $warning-text;
+//                     color: aliceblue;
+//                     padding: 0;
+//                     border-radius: 10px;
+//                     margin: 0 40px 0px;
+//                     width: 100%;
+//                     max-width: 200px;
+//                     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+//                     span.p-button-icon {
+//                         padding: 8px 14px;
+//                         background: $warning-text;
+//                         font-size: 20px;
+//                         font-weight: 500;
+//                         color: $white;
+//                     }
+//                     span.p-button-label {
+//                         color: $darkgray;
+//                         font-size: 16px;
+//                         padding: 0px 16px 0px 5px;
+//                     }
+//                 }
+//                 .group_btn {
+//                     border: 1px solid $blue;
+//                     color: $blue;
+//                     padding: 0;
+//                     border-radius: 10px;
+//                     margin: 0 40px 0px;
+//                     width: 100%;
+//                     max-width: 200px;
+//                     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+//                     span.p-button-icon {
+//                         padding: 8px 14px;
+//                         background: $blue;
+//                         font-size: 20px;
+//                         font-weight: 500;
+//                         color: $white;
+//                     }
+//                     span.p-button-label {
+//                         color: $darkgray;
+//                         font-size: 16px;
+//                         padding: 0px 16px 0px 5px;
+//                     }
+//                 }
+//                 .class_btn {
+//                     border: 1px solid $darkgray;
+//                     color: $darkgray;
+//                     padding: 0;
+//                     margin: 0 40px 0px;
+//                     width: 100%;
+//                     max-width: 200px;
+//                     border-radius: 10px;
+//                     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+//                     span.p-button-icon {
+//                         padding: 8px 14px;
+//                         background: $darkgray;
+//                         font-size: 20px;
+//                         font-weight: 500;
+//                         color: $white;
+//                     }
+//                     span.p-button-label {
+//                         color: $darkgray;
+//                         font-size: 16px;
+//                         padding: 0px 16px 0px 5px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+@import 'variables.scss';
+.recommended_appointments {
+    .p-card {
+        .p-card-header {
+            background: $lightgrey;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: $font-family;
+        }
+        .p-card-body {
+            padding: 0px 10px;
+            .p-card-content {
+                padding: 0px;
+                .content_body {
+                    display: block;
+                    width: 100%;
+                    div.title {
+                        width: 70%;
+                        display: inline-block;
+                        padding: 10px 0px;
+                        color: $darkgray;
+                        .time {
+                            display: inline-block;
+                            color: $danger-text;
+                            font-size: 10px;
+                            font-family: $font-family;
+                        }
+                        .time_warning {
+                            display: inline-block;
+                            color: $warning-text;
+                            font-size: 10px;
+                            font-family: $font-family;
+                        }
+                    }
+                    .divider {
+                        width: 100%;
+                        display: block;
+                        border-top: 1px solid $lightgray;
+                    }
+                    div.action {
+                        text-align: right;
+                        width: 30%;
+                        display: inline-grid;
+                        padding: 10px 0px;
+                        .p_btn {
+                            padding: 2px 10px;
+                            font-size: 12px;
+                            font-family: $font-family;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .p-card-footer {
+            border-top: 1px solid $lightgray;
+            text-align: center;
+            padding: 10px;
+            font-family: $font-family;
+            .p-button-secondary {
+                padding: 2px 15px;
+                font-size: 12px;
+                border-radius: 10px;
+                background: $darkgray;
+                border: 1px solid $darkgray;
+                font-family: $font-family;
+            }
+        }
+    }
+}
+
+.slider_content {
+    h1 {
+        font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        color: $darkgray;
+    }
+    .p-carousel {
+        .p-carousel-indicators {
+            display: none;
+        }
+        .p-carousel-content {
+            .p-carousel-container {
+                position: relative;
+                .p-carousel-prev,
+                .p-carousel-next {
+                    position: absolute;
+                    z-index: 1;
+                    background: $lightgray_opt;
+                    border-radius: 0px;
+                    margin: 0;
+                    height: 95%;
+                    padding: 30px;
+                    span {
+                        font-size: 35px;
+                        color: $darkgray;
+                    }
+                }
+                .p-carousel-next {
+                    right: 0;
+                }
+                .p-carousel-items-content {
+                    width: 100%;
+                    .p-carousel-items-container {
+                        .p-carousel-item {
+                            .product-item {
+                                .product-item-content {
+                                    position: relative;
+                                    top: 7px;
+                                    .p-mb-3 {
+                                        margin: 0px 20px;
+                                        .icon_category {
+                                            top: 0;
+                                            position: absolute;
+                                            margin: 10px 50px;
+                                            width: 100%;
+                                            z-index: 1;
+                                            i {
+                                                color: $danger-text;
+                                            }
+                                        }
+                                        img {
+                                            width: 100%;
+                                            height: 150px;
+                                        }
+                                    }
+                                    .title_carsoul {
+                                        display: block;
+                                        margin: 0px 20px;
+                                        padding: 5px 10px;
+                                        position: absolute;
+                                        bottom: 0;
+                                        background: rgba(0, 0, 0, 0.5);
+                                        width: 87%;
+                                        h4 {
+                                            color: $white;
+                                        }
+                                        h6 {
+                                            color: $white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header_activity {
+    margin: 20px 0px;
+    display: flex;
+    .title_header {
+        width: 90%;
+        display: block;
+        font-size: 20px;
+        color: $darkgray;
+    }
+    .action_header {
+        width: 10%;
+        display: block;
+        span {
+            i {
+                font-size: 20px;
+                margin: 0px 10px;
+                color: $darkgray;
+                top: 2px;
+                position: relative;
+            }
+        }
+        .p-button-secondary {
+            padding: 2px 15px;
+            font-size: 12px;
+            border-radius: 10px;
+            background: $darkgray;
+            border: 1px solid $darkgray;
+        }
+    }
+}
+
+.activities_dashboard {
+    .p-paginator {
+        background: transparent;
+        border: 1px solid transparent;
+        border-bottom: 1px solid #C5C5C7;
+        display: block;
+        align-items: flex-end;
+        justify-content: flex-end;
+        text-align: end;
+        .p-paginator-pages {
+            .p-paginator-page.p-highlight {
+                background: $darkgray;
+                border-color: $darkgray;
+            }
+        }
+    }
+    .p-datatable {
+        .p-datatable-table {
+            .p-datatable-thead {
+                tr {
+                    th {
+                        background: $lightgrey;
+                        border: 1px solid $lightgrey;
+                        border-bottom: 1px solid $lightgray;
+                        padding: 15px;
+                        color: #000;
+                    }
+                }
+            }
+            .p-datatable-tbody {
+                tr {
+                    td {
+                        background: #ffffff;
+                        border: 1px solid #ffffff;
+                        border-bottom: 1px solid #C5C5C7;
+                        font-size: 14px;
+                        padding: 10px;
+                        span.time {
+                            text-align: center;
+                            font-size: 14px;
+                            color: $warning-text;
+                        }
+                        .ecl_span {
+                            float: right;
+                        }
+                        .p-button-warning {
+                            padding: 2px 15px;
+                            font-size: 12px;
+                            border-radius: 10px;
+                        }
+                        .activity_icon {
+                            background-color: $lightgrey;
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            font-size: 22px;
+                            color: #636468 !important;
+                            margin: 10px !important;
+                            padding: 6px;
+                        }
+                    }
+                    td:nth-child(6) {
+                        display: flex;
+                        span.time {
+                            display: block;
+                            text-align: center;
+                            font-size: 16px;
+                            color: $warning-text;
+                            width: 100%;
+                            span {
+                                display: block;
+                                font-size: 12px;
+                            }
+                        }
+                        .ecl_span {
+                            display: block;
+                            float: right;
+                            top: 10px;
+                            position: relative;
+                            .p-splitbutton {
+                                .p-menu {
+                                    left: -140px !important;
+                                }
+                                .p-splitbutton-defaultbutton {
+                                    display: none;
+                                }
+                                .p-splitbutton-menubutton {
+                                    padding: 0px;
+                                    background: transparent;
+                                    border: 1px solid transparent;
+                                    span {
+                                        color: $darkgray;
+                                    }
+                                    span.pi-chevron-down::before {
+                                        content: "\e950";
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.col-3 {
+    width: 100%;
+    padding: 0;
+    max-width: 424px;
+    margin-right: 30px;
+}
+
+.col-3:nth-child(3) {
+    margin-right: 0px;
+}
+
+.slider_content {
+    h1 {
+        padding: 5px 20px;
+    }
+    .card-content {
+        text-align: center;
+        max-width: 300px;
+        margin: 0 auto;
+        .btn-primary {
+            font-size: 14px;
+            margin: auto;
+            border-radius: 35px;
+            padding: 5px 15px;
+            background-color: #FED268;
+            border-color: #FED268;
+            top: -18px;
+            position: relative;
+        }
+        .card-block {
+            padding: 5px;
+            .card-title {
+                color: $darkgray;
+            }
+            .card-text {
+                color: $lightgray;
+            }
+        }
+    }
+}
+
+.dashboard_dialog {
+    .p-dialog-mask {
+        .p-dialog {
+            height: 870vw !important;
+            .p-dialog-header {
+                border-bottom: 1px solid $lightgray;
+                background: $white;
+                color: $darkgray;
+                .p-dialog-title {
+                    font-size: 20px;
+                }
+            }
+            .p-dialog-content {
+                .fc-header-toolbar {
+                    .fc-toolbar-chunk {
+                        div {
+                            display: flex;
+                            .fc-prev-button {
+                                border-end-start-radius: 10px;
+                                border-top-left-radius: 10px;
+                                background: $lightgray;
+                                border: 1px solid $lightgray;
+                                border-right: 1px solid $darkgray;
+                                position: relative;
+                                span {
+                                    color: $darkgray;
+                                }
+                            }
+                            .fc-next-button {
+                                border-bottom-right-radius: 10px;
+                                border-top-right-radius: 10px;
+                                background: $lightgray;
+                                border: 1px solid $lightgray;
+                                border-left: 1px solid $darkgray;
+                                left: -1px;
+                                position: relative;
+                                span {
+                                    color: $darkgray;
+                                }
+                            }
+                            .fc-toolbar-title {
+                                font-size: 20px;
+                                background: #C5C5C7;
+                                position: relative;
+                                padding: 5px 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            .p-dialog-footer {
+                text-align: center;
+                border-top: 1px solid transparent;
+                padding: 25px;
+                padding-top: 10px;
+                .appointment_btn {
+                    border: 1px solid $warning-text;
+                    color: aliceblue;
+                    padding: 0;
+                    border-radius: 10px;
+                    margin: 0 40px 0px;
+                    width: 100%;
+                    max-width: 200px;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+                    span.p-button-icon {
+                        padding: 8px 14px;
+                        background: $warning-text;
+                        font-size: 20px;
+                        font-weight: 500;
+                        color: $white;
+                    }
+                    span.p-button-label {
+                        color: $darkgray;
+                        font-size: 16px;
+                        padding: 0px 16px 0px 5px;
+                    }
+                }
+                .group_btn {
+                    border: 1px solid $blue;
+                    color: $blue;
+                    padding: 0;
+                    border-radius: 10px;
+                    margin: 0 40px 0px;
+                    width: 100%;
+                    max-width: 200px;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+                    span.p-button-icon {
+                        padding: 8px 14px;
+                        background: $blue;
+                        font-size: 20px;
+                        font-weight: 500;
+                        color: $white;
+                    }
+                    span.p-button-label {
+                        color: $darkgray;
+                        font-size: 16px;
+                        padding: 0px 16px 0px 5px;
+                    }
+                }
+                .class_btn {
+                    border: 1px solid $darkgray;
+                    color: $darkgray;
+                    padding: 0;
+                    margin: 0 40px 0px;
+                    width: 100%;
+                    max-width: 200px;
+                    border-radius: 10px;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+                    span.p-button-icon {
+                        padding: 8px 14px;
+                        background: $darkgray;
+                        font-size: 20px;
+                        font-weight: 500;
+                        color: $white;
+                    }
+                    span.p-button-label {
+                        color: $darkgray;
+                        font-size: 16px;
+                        padding: 0px 16px 0px 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.video-thumbnail {
+    height: 150px;
+}
+
+.play-btn {
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 58px;
+    animation: animate 2s linear infinite;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.play-btn i {
+    color: #ffc107;
+    font-size: 52px;
+}
+
+@keyframes animate {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.7);
+    }
+    40% {
+        box-shadow: 0 0 0 50px rgba(255, 193, 7, 0);
+    }
+    80% {
+        box-shadow: 0 0 0 50px rgba(255, 193, 7, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 rgba(255, 193, 7, 0);
+    }
+}

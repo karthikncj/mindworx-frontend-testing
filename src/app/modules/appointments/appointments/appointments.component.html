@@ -1,0 +1,105 @@
+<div class="cont p-shadow-4">
+    <p-card class="card-align">
+        <div class="p-grid">
+            <div class="p-col-12">
+                <h4>
+                    Your Appointments
+                </h4>
+                <h6 class="lightgrey">
+                    Your Appointment will be listed below. You can join or checkin through action button
+                </h6>
+            </div>
+        </div>
+        <div class="p-grid">
+            <div class="p-col-12 p-md-12 p-lg-12">
+                <div class="slider_content">
+                    <p-table [value]="appointment" [rows]="3" class="activities_appointments" [paginator]="true">
+                        <ng-template pTemplate="caption">
+                            <div class="">
+                                <div class="p-grid">
+                                    <div class="p-col-9">
+                                        <button pButton type="button" label="Book" icon="pi pi-plus-circle" class="appointmentbutton"></button>
+                                    </div>
+                                    <div class="p-col-3" style="text-align: right;">
+                                        <p-dropdown [options]="mw" [(ngModel)]="selectedMW" optionLabel="name">
+
+                                        </p-dropdown>
+
+                                        <i class="pi pi-calendar" style="padding: 10px;"></i>
+
+                                        <i class="pi pi-book" routerLink="[Calendar]"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                        <ng-template pTemplate="header">
+                            <tr>
+                                <th pSortableColumn="name">Appointment Details</th>
+                                <th pSortableColumn="rating">Provider Name</th>
+                                <th pSortableColumn="category">Date</th>
+                                <th pSortableColumn="inventoryStatus">Action </th>
+                                <th></th>
+                            </tr>
+                        </ng-template>
+                        <ng-template pTemplate="body" let-appointment>
+                            <tr>
+                                <td>{{appointment.name}}</td>
+                                <td> {{appointment.provider}} </td>
+
+                                <td>
+                                    <span class="date"><span>{{appointment.date }}</span></span>
+                                    <span class="d_time"><span>{{appointment.time }}</span></span>
+
+                                </td>
+                                <td *ngIf="appointment.actionStatus === 'join enable' " class="action">
+                                    <button pButton type="button" label="{{appointment.action}}" class="p_btn p-button-outlined p-button-warning"></button>
+                                </td>
+                                <!-- <td *ngIf="appointment.actionStatus === 'join disable' " class="action"> -->
+                                <!-- <button pButton type="button" label="{{appointment.action}}" [disabled]="appointment.actionStatus === 'join disable' " class="p_btn p-button-outlined p-button-secondary"></button> -->
+                                <!-- </td> -->
+                                <td *ngIf="appointment.actionStatus === 'checkin enable' " class="action">
+                                    <button pButton type="button" label="{{appointment.action}}" class="p_btn p-button-outlined p-button-danger"></button>
+                                </td>
+                                <td *ngIf="appointment.actionStatus === 'checkin disable' " class="action">
+                                    <button pButton type="button" label="{{appointment.action}}" [disabled]="appointment.actionStatus === 'checkin disable' " class="p_btn p-button-outlined p-button-secondary"></button>
+                                </td>
+                                <td>
+                                    <span class="time"><span>Time to Start</span>02:00:20</span>
+                                    <span class="ecl_span"><p-splitButton [model]="spliticon"></p-splitButton></span>
+                                </td>
+                            </tr>
+                        </ng-template>
+                    </p-table>
+                </div>
+            </div>
+        </div>
+        <div class="p-grid">
+            <div class="p-col-12">
+                <div class="other_service">
+                    <h1>Other Services</h1>
+                    <p-carousel [value]="appointment" class="card card-content" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1" [circular]="true" [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions" class="appointment_carousel">
+                        <ng-template pTemplate="header">
+                        </ng-template>
+                        <ng-template let-product pTemplate="item">
+                            <div class="product-item">
+                                <div class="product-item-content">
+                                    <div class="p-mb-3">
+                                        <img src="./assets/img/Appointments/other services/image 1-1.png" [alt]="product.name" class="product-image" />
+                                        <a class="btn btn-primary action_call">Call To Action</a>
+                                    </div>
+                                    <div class="title_content">
+                                        <h4 class="p-mb-1">{{product.name}}</h4>
+                                        <span [class]="'product-badge status-'+product.inventoryStatus.toLowerCase()">{{product.inventoryStatus}}</span>
+                                        <div class="car-buttons p-mt-5">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </p-carousel>
+                </div>
+            </div>
+        </div>
+    </p-card>
+    <!-- <app-page1></app-page1> -->
+</div>

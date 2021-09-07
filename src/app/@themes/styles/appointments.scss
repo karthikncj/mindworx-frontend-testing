@@ -1,0 +1,203 @@
+@import "variables.scss";
+.card-content {
+    text-align: center;
+}
+
+.card-align {
+    background: transparent;
+    box-shadow: none;
+}
+
+.appointment_carousel {
+    .action_call {
+        position: absolute;
+        border: 1px solid $yellow;
+        background: $yellow;
+        left: 100px;
+        bottom: -15px;
+        border-radius: 20px;
+    }
+    .title_content {
+        padding: 20px;
+    }
+    .product-item {
+        .p-mb-3 {
+            position: relative;
+        }
+        .product-item-content {
+            border: 1px solid var(--surface-d);
+            border-radius: 3px;
+            margin: 3rem;
+            text-align: center;
+        }
+        .product-image {
+            width: 100%;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
+        }
+    }
+    .p-carousel-indicators {
+        display: none;
+    }
+}
+
+.other_service {
+    h1 {
+        font-size: 25px;
+        color: $darkgray;
+        padding: 10px 20px;
+    }
+}
+
+// Book-Button 
+.appointmentbutton {
+    width: 87px;
+    height: 35px;
+    border-radius: 10px;
+    color: $white;
+    background-color: $lightgray;
+    border: 1px solid $lightgray;
+}
+
+.action {
+    text-align: right;
+    width: 100%;
+    padding: 10px 0px;
+    .p_btn {
+        padding: 2px 15px;
+        font-size: 12px;
+        border-radius: 10px;
+    }
+}
+
+// Book-Button Hover effect removed
+.appointmentbutton:hover {
+    color: $white !important;
+    background-color: $lightgray !important;
+    border: 1px solid $lightgray !important;
+}
+
+// Table Content Style
+.slider_content {
+    .p-splitbutton {
+        .p-menu {
+            left: -140px !important;
+        }
+        .p-splitbutton-defaultbutton {
+            display: none;
+        }
+        .p-splitbutton-menubutton {
+            padding: 0px;
+            background: transparent;
+            border: 1px solid transparent;
+            span {
+                color: $darkgray;
+            }
+            span.pi-chevron-down::before {
+                content: "\e950";
+            }
+        }
+    }
+}
+
+// Table Styles
+.activities_appointments {
+    .p-paginator {
+        background: transparent;
+        border: 1px solid transparent;
+        border-bottom: 1px solid #C5C5C7;
+        display: block;
+        align-items: flex-end;
+        justify-content: flex-end;
+        text-align: end;
+        .p-paginator-pages {
+            .p-paginator-page.p-highlight {
+                background: $darkgray;
+                border-color: $darkgray;
+            }
+        }
+    }
+    .p-datatable {
+        .p-datatable-table {
+            .p-datatable-thead {
+                tr {
+                    th {
+                        background: $lightgrey;
+                        border: 1px solid $lightgrey;
+                        border-bottom: 1px solid $lightgray;
+                        padding: 15px;
+                        color: #000;
+                    }
+                }
+            }
+            .p-datatable-tbody {
+                tr {
+                    td {
+                        background: #ffffff;
+                        border: 1px solid #ffffff;
+                        border-bottom: 1px solid #C5C5C7;
+                        font-size: 14px;
+                        span.time {
+                            display: block;
+                            text-align: center;
+                            font-size: 16px;
+                            color: $warning-text;
+                            width: 100%;
+                        }
+                        .ecl_span {
+                            float: right;
+                        }
+                        .p-button-warning {
+                            padding: 2px 15px;
+                            font-size: 12px;
+                            border-radius: 10px;
+                        }
+                    }
+                    td:nth-child(5) {
+                        display: flex;
+                        padding-bottom: 10px;
+                        span.time {
+                            display: block;
+                            text-align: center;
+                            font-size: 16px;
+                            color: $warning-text;
+                            width: 100%;
+                            span {
+                                display: block;
+                                font-size: 12px;
+                            }
+                        }
+                        .ecl_span {
+                            display: block;
+                            float: right;
+                            top: 10px;
+                            position: relative;
+                            .p-splitbutton {
+                                .p-splitbutton-defaultbutton {
+                                    display: none;
+                                }
+                                .p-splitbutton-menubutton {
+                                    padding: 0px;
+                                    background: transparent;
+                                    border: 1px solid transparent;
+                                    span {
+                                        color: $darkgray;
+                                    }
+                                    span.pi-chevron-down::before {
+                                        content: "\e950";
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//font
+.p-component {
+    font-family: $font-family, $font-family, "$font-family", $font-family, $font-family, $font-family, $font-family, "$font-family", "$font-family", "$font-family";
+    font-size: 1rem;
+    font-weight: normal;
+}

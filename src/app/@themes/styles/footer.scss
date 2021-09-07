@@ -1,0 +1,10 @@
+@import 'variables.scss';
+footer{
+    background-color: #ececf0;
+    line-height: 24px;
+    color: #636468;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    z-index: 999;
+}

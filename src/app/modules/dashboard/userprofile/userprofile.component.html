@@ -1,0 +1,27 @@
+<div class="wrapper">
+    <div class="cont_userprofile p-shadow-4">
+        <div class="p-grid">
+            <div class="p-col-12 p-md-12 p-lg-12 align_h">
+                <h4>
+                    Create Profile
+                </h4>
+                <p-divider></p-divider>
+                <p-timeline [value]="events" layout="horizontal" class="time_line">
+                    <ng-template pTemplate="content" let-event>
+                        {{event.status}}
+                    </ng-template>
+                </p-timeline>
+                <span class="tex_aln">
+                <div class="p-fluid p-formgrid p-grid">
+                    <div class="p-field p-col-12 p-md-12 p-lg-12">
+                        <label for="firstname1">Firstname</label>
+                        <input id="firstname1" type="text" pInputText>
+                        <!-- <p-menu [model]="items"></p-menu> -->
+
+                    </div>
+                </div>
+            </span>
+            </div>
+        </div>
+    </div>
+</div>

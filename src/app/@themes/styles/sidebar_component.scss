@@ -1,0 +1,86 @@
+@import 'variables.scss';
+//StartingSidebar
+.sidebar_menu {
+    .p-megamenu {
+        display: inline-block;
+        width: 100%;
+        max-width: 100px;
+        border-radius: 35px;
+        position: fixed;
+        top: 105px;
+        margin-left: 10px;
+        .p-megamenu-root-list {
+            height: auto;
+            padding: 0px 10px;
+            margin: 20px 0px;
+            li {
+                text-align: center;
+                border-radius: 35px;
+                a {
+                    display: block;
+                    padding: 10px 0px !important;
+                    border-radius: 15px !important;
+                    border: 1px solid $grey;
+                    margin: 10px 0px;
+                    background-color: $white;
+                    transition: all 0.5s ease-in-out;
+                    span {
+                        width: 100%;
+                        transition: all 0.5s ease-in-out;
+                    }
+                    .p-menuitem-text {
+                        font-size: 8px;
+                        font-family: 'poppins';
+                        color: $darkgray !important;
+                        display: block;
+                        letter-spacing: 0.5px;
+                    }
+                    .p-menuitem-icon {
+                        background-color: $grey;
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 50%;
+                        font-size: 25px;
+                        color: $darkgray !important;
+                        margin: 0px !important;
+                        margin-bottom: 5px !important;
+                    }
+                    .p-menuitem-icon::before {
+                        top: 6px;
+                        position: relative;
+                    }
+                }
+                a:hover {
+                    border: 1px solid $darkgray !important;
+                    background-color: $darkgray !important;
+                    .p-menuitem-text {
+                        color: $white !important;
+                    }
+                }
+                a.p-menuitem-link-active {
+                    border: 1px solid $darkgray;
+                    background-color: $darkgray;
+                    .p-menuitem-text {
+                        color: $white !important;
+                    }
+                }
+            }
+            li:nth-child(1) {
+                position: absolute;
+                left: 110px;
+                height: 35px;
+                width: 35px;
+                display: none;
+                a {
+                    padding: 0px !important;
+                    margin: 0px;
+                    .p-menuitem-icon {
+                        margin-bottom: 0px !important;
+                        background-color: white;
+                        color: $darkgray;
+                    }
+                }
+            }
+        }
+    }
+}
