@@ -23,7 +23,7 @@
         "@fullcalendar/daygrid": "^5.9.0",
         "@fullcalendar/interaction": "^5.9.0",
         "font-awesome": "^4.7.0",
-        "primeflex": "~3.0.1",
+        "primeflex": "~2.0.0",
         "primeicons": "^4.1.0",
         "primeng": "^12.1.0-rc.2",
         "rxjs": "~6.6.0",
