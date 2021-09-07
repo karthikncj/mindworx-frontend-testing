@@ -43,7 +43,7 @@ export class SidebarComponent implements OnInit {
               }
           },
           {
-              label: 'Dashboard', icon: 'fa fa-chart-pie',routerLink:'dashboard'
+              label: 'Dashboard', icon: 'fa fa-chart-pie',routerLink:'/'
           },
           {
               label: 'Appointment', icon: 'pi pi-fw pi-calendar',routerLink:'appointments'

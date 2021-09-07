@@ -6,7 +6,7 @@ import { ClassesComponent } from './modules/classes/classes.component';
 
 const routes: Routes = [
 { path: '*', redirectTo: 'dashboard', pathMatch: 'full' },
-{ path: 'dashboard', component: DashboardComponent },
+{ path: '', component: DashboardComponent },
  { path: 'appointments', component: AppointmentsComponent },
  { path: 'Classes', component: ClassesComponent },
 
